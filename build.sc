@@ -20,7 +20,7 @@ object `mill-giter8` extends ScalaModule with PublishModule {
   override def publishVersion = T{"0.0.1"}
   def pomSettings = PomSettings(
     description = "Giter8 integrated in mill ExternalModule",
-    organization = "org.matru",
+    organization = "com.github.mattisr",
     url = "https://github.com/mattisr/mill-giter8",
     licenses = Seq(License.MIT),
     versionControl = VersionControl.github("mattisr", "mill-giter8"),

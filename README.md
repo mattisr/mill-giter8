@@ -14,7 +14,7 @@ if (!ammonite.ops.exists(ammonite.ops.pwd/"build.sc"))
 import $ivy.`org.foundweekends.giter8:giter8-lib_2.13:0.13.1`
 
 // Import the mill ExternalModule that is using giter8
-import $ivy.`org.matru::mill-giter8:0.0.1`
+import $ivy.`com.github.mattisr::mill-giter8:0.0.1`
 ```
 
 ## Usage
