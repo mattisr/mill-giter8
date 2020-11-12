@@ -4,7 +4,7 @@ import publish._
 import mill.api.Loose
 import mill.define.Target
 
-object template extends ScalaModule with PublishModule {
+object `mill-giter8` extends ScalaModule with PublishModule {
   override def scalaVersion: T[String] = T {"2.13.1"}
 
   val millVersion = "0.7.4"
@@ -19,13 +19,13 @@ object template extends ScalaModule with PublishModule {
 
   override def publishVersion = T{"0.0.1"}
   def pomSettings = PomSettings(
-    description = "My first library",
-    organization = "com.matru",
-    url = "https://github.com/matru/template",
+    description = "Giter8 integrated in mill ExternalModule",
+    organization = "org.matru",
+    url = "https://github.com/mattisr/mill-giter8",
     licenses = Seq(License.MIT),
-    versionControl = VersionControl.github("matru", "template"),
+    versionControl = VersionControl.github("mattisr", "mill-giter8"),
     developers = Seq(
-      Developer("matru", "MatRu","https://github.com/matru")
+      Developer("mattisr", "MattisR","https://github.com/mattisr")
     )
   )
 }
